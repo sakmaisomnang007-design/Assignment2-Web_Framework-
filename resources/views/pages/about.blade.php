@@ -1,14 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
+    @extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>About – TechNews</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    @section('content')
+
+    <main>
+        <div class="wrap page-hero">
+            <p class="eyebrow">About us</p>
+            <h1>We make technology news easy to read.</h1>
+            <p>TechNews started with a simple idea: people are busy, and good information should not take an hour to
+                find.</p>
+        </div>
+
+        <div class="wrap stats">
+            <div class="stat"><b>5 min</b><span>to read the daily digest</span></div>
+            <div class="stat"><b>20+</b><span>trusted sources checked every day</span></div>
+            <div class="stat"><b>100%</b><span>free for every reader</span></div>
+        </div>
+
+        <section class="why">
+            <div class="wrap story">
+                <h2>Our story</h2>
+                <div>
+                    <p>We are a small team of developers, teachers and writers who love technology. We kept seeing the
+                        same problem: too many articles, too much noise, and not enough time.</p>
+                    <p>So we built TechNews. It gathers stories from trusted sources, removes repeats, and gives you a
+                        short, clear summary of each one, written in plain language.</p>
+                    <p>Whether you are a student, a developer or just curious, our goal is the same: help you understand
+                        what changed in tech today.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrap">
+            <div class="head">
+                <h2>How it works</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <h3>We collect</h3>
+                    <p>New articles arrive automatically from trusted news feeds throughout the day.</p>
+                </div>
+                <div class="step">
+                    <h3>We simplify</h3>
+                    <p>Each story is shortened to the key points, so you know what happened and why it matters.</p>
+                </div>
+                <div class="step">
+                    <h3>You read</h3>
+                    <p>Browse the website or get the best stories in one short email each morning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrap">
+            <div class="head">
+                <h2>The team</h2>
+            </div>
+            <div class="team">
+                <div class="member">
+                    <div class="avatar" style="background:#dbe4ff">A</div>
+                    <h3>Your Name</h3>
+                    <p>Founder and developer</p>
+                </div>
+                <div class="member">
+                    <div class="avatar" style="background:#d9f2e6">B</div>
+                    <h3>Team Member</h3>
+                    <p>Editor</p>
+                </div>
+                <div class="member">
+                    <div class="avatar" style="background:#ffe3dc">C</div>
+                    <h3>Team Member</h3>
+                    <p>Designer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta wrap">
+            <h2>Read less. Know more.</h2>
+            <p>Get the daily digest and catch up on technology in five minutes.</p>
+            <a href="index.html#subscribe" class="btn">Subscribe for free</a>
+        </section>
+    </main>
+
     <style>
         :root {
             --bg: #ffffff;
@@ -597,95 +668,5 @@
             }
         }
     </style>
-</head>
 
-<body>
-
-    <x-header></x-header>
-
-    <main>
-        <div class="wrap page-hero">
-            <p class="eyebrow">About us</p>
-            <h1>We make technology news easy to read.</h1>
-            <p>TechNews started with a simple idea: people are busy, and good information should not take an hour to
-                find.</p>
-        </div>
-
-        <div class="wrap stats">
-            <div class="stat"><b>5 min</b><span>to read the daily digest</span></div>
-            <div class="stat"><b>20+</b><span>trusted sources checked every day</span></div>
-            <div class="stat"><b>100%</b><span>free for every reader</span></div>
-        </div>
-
-        <section class="why">
-            <div class="wrap story">
-                <h2>Our story</h2>
-                <div>
-                    <p>We are a small team of developers, teachers and writers who love technology. We kept seeing the
-                        same problem: too many articles, too much noise, and not enough time.</p>
-                    <p>So we built TechNews. It gathers stories from trusted sources, removes repeats, and gives you a
-                        short, clear summary of each one, written in plain language.</p>
-                    <p>Whether you are a student, a developer or just curious, our goal is the same: help you understand
-                        what changed in tech today.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="wrap">
-            <div class="head">
-                <h2>How it works</h2>
-            </div>
-            <div class="steps">
-                <div class="step">
-                    <h3>We collect</h3>
-                    <p>New articles arrive automatically from trusted news feeds throughout the day.</p>
-                </div>
-                <div class="step">
-                    <h3>We simplify</h3>
-                    <p>Each story is shortened to the key points, so you know what happened and why it matters.</p>
-                </div>
-                <div class="step">
-                    <h3>You read</h3>
-                    <p>Browse the website or get the best stories in one short email each morning.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="wrap">
-            <div class="head">
-                <h2>The team</h2>
-            </div>
-            <div class="team">
-                <div class="member">
-                    <div class="avatar" style="background:#dbe4ff">A</div>
-                    <h3>Your Name</h3>
-                    <p>Founder and developer</p>
-                </div>
-                <div class="member">
-                    <div class="avatar" style="background:#d9f2e6">B</div>
-                    <h3>Team Member</h3>
-                    <p>Editor</p>
-                </div>
-                <div class="member">
-                    <div class="avatar" style="background:#ffe3dc">C</div>
-                    <h3>Team Member</h3>
-                    <p>Designer</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta wrap">
-            <h2>Read less. Know more.</h2>
-            <p>Get the daily digest and catch up on technology in five minutes.</p>
-            <a href="index.html#subscribe" class="btn">Subscribe for free</a>
-        </section>
-    </main>
-
-    <x-footer></x-footer>
-
-    <script>
-        document.getElementById("yr").textContent = new Date().getFullYear();
-    </script>
-</body>
-
-</html>
+    @endsection

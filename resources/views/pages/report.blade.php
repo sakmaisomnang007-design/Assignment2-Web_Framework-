@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Report us</title>
+    @extends('layouts.app')
+
+    @section('content')
+    
+    <main>
+        <div class ="wrap hero">
+        <p>Report Us</p>
+        <h1>Contact to our support teams</h1>
+        <p>Question, bug report,feedback we're here for it all</p>
+
+        </div>
+        
+    </main>
+
     <style>
                 :root {
             --bg: #ffffff;
@@ -299,19 +306,12 @@
 
 
     </style>
-</head>
-<body>
     
-    <x-header></x-header>
-    <main>
-        <div class ="wrap hero">
-        <p>Report Us</p>
-        <h1>Contact to our support teams</h1>
-        <p>Question, bug report,feedback we're here for it all</p>
+    @endsection
 
-        </div>
-        
-    </main>
-    <x-footer></x-footer>
-</body>
-</html>
+
+
+
+
+
+
